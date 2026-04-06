@@ -38,7 +38,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-  i2c_buf[0] = 0x10;
+  	  i2c_buf[0] = 0x10;
 	  ret = HAL_I2C_Master_Transmit(&hi2c1, (0x23 << 1), i2c_buf, 1, 100);
 
 	  if (ret != HAL_OK) {
