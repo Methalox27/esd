@@ -1,0 +1,37 @@
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+/* Private variables ---------------------------------------------------------*/
+UART_HandleTypeDef huart2;
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_USART2_UART_Init(void);
+
+int main(void)
+{
+  HAL_Init();
+
+  SystemClock_Config();
+
+  MX_GPIO_Init();
+  MX_USART2_UART_Init();
+ 
+  /* USER CODE BEGIN 2 */
+  // 1. Define the message
+  char msg[] = "Welcome to BMSCE!\r\n";
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+      HAL_UART_Transmit(&huart2, (uint8_t*)msg, 19, 100);
+      // Add a small delay so it doesn't print all at once instantly
+      HAL_Delay(200);
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+}
