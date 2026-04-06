@@ -4,10 +4,7 @@
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+
 int main(void)
 {
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
