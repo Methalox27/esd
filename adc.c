@@ -44,21 +44,6 @@ int main(void)
             // 3. Get the raw value (0 - 4095)
             adc_val = HAL_ADC_GetValue(&hadc1);
 
-            // 5. Send the value to the Serial Monitor
-            int len = sprintf(msg, "Sound Level: %lu\r\n", adc_val);
-            HAL_UART_Transmit(&huart2, (uint8_t*)msg, len, 100);
-
-
-             // Adjust the '2000' value based on your room's noise level.
-
-            if (adc_val > 2000)
-            {
-                HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);   // LED ON
-            }
-            else
-            {
-                HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET); // LED OFF
-            }
         }
 
         // 7. Stop the ADC to clear flags for the next iteration
