@@ -1,3 +1,6 @@
+// Trig = PA8 => D7    gpio_output
+// Echo = PB10 => D6   gpio_input
+
 #include "main.h"
 #include <stdio.h> // Needed for sprintf
 
