@@ -1,3 +1,7 @@
+// PA5 -> TIM2_CH1
+// Timers -> Tim2 -> Clock Source = Internal Clock, Channel 1 = PWM Generation CH1
+// Under configurations, Prescalar = 83, Counter Period = 500, Auto Reload Period = Enabled
+
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
