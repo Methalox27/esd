@@ -1,3 +1,5 @@
+// PD3, PD4, PD5 -> GPIO_Output
+
 while (1) 
 {
   //There's another line here
