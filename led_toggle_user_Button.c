@@ -1,3 +1,6 @@
+//PA5 -> GPIO_Output
+//PC13 -> GPIO_Input
+
 while (1)
   {
     // Check if the button is pressed (State goes to RESET/LOW)
