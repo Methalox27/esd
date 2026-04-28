@@ -1,3 +1,5 @@
+// PA5 -> GPIO_Output
+
 #include "main.h"
 
 /* Private function prototypes -----------------------------------------------*/
