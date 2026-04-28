@@ -1,3 +1,5 @@
+// PB4 -> GPIO_Output
+
 while (1) 
 {
   HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
