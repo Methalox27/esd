@@ -1,5 +1,6 @@
 // Trig = PA8 => D7    gpio_output
 // Echo = PB10 => D6   gpio_input
+// Timers -> Tim2 -> clock source set as internal clock.  prescaler = 83,  auto reload preiod = Enable
 
 #include "main.h"
 #include <stdio.h> // Needed for sprintf
