@@ -10,11 +10,8 @@ TIM_HandleTypeDef htim2;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-uint32_t pMillis;
-uint32_t Value1 = 0;
 uint32_t Value2 = 0;
 float Distance = 0;  // cm
-char msg[50];        // Buffer to hold the text string
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
