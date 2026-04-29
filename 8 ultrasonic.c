@@ -12,6 +12,7 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 uint32_t Value2 = 0;
 float Distance = 0;  // cm
+char msg[20];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
