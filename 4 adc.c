@@ -1,4 +1,6 @@
 // PA0 = ADC1_IN0  (A0 pin) . under analog -> adc1 select IN0
+// Continuous Conversion Mode  = Enabled
+// Rank -> Sampling time = 54 cycles
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
